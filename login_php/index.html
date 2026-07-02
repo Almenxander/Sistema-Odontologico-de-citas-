@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login PHP</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="contenedor_login">
+        <img src="/login_php/imagenes.php/492550801_9987694384621915_8246697354399586990_n.jpg" alt="">
+        <h2>Iniciar Sesion</h2>
+        <br>
+        <form action="datos.php" class="formulario" method="post">
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" name="usuario" required>
+            
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="pass" required> 
+            
+            <button type="submit" >Iniciar Sesion</button>
+        </form>
+
+        <div id="mensaje">
+            <?php if(isset($_get['mensaje'])) echo $_get['mensaje']; ?>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
